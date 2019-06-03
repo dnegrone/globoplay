@@ -1,0 +1,61 @@
+#detalhes .container {
+    margin: 150px 0 0 15%;
+}
+#detalhes .container h2 {
+    line-height: 1.5;
+    color: #fff;
+}
+#detalhes .container h2 small {
+    display: block;
+    font-size: 36px;
+}
+.fundo-destaque {
+    z-index: -1;
+    background: url("/static/imgs/bbb_background_interno.jpg") center -60px no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+}
+.gradiente-fundo-destaque {
+    background: linear-gradient(to right,  rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+#detalhes-programacao .thumb:after {
+    transition: all 300ms ease-out;
+}
+#detalhes-programacao .thumb:hover {
+    outline: solid 3px #fff;
+}
+#detalhes-programacao .thumb:hover:after {
+    position: absolute;
+    float: left;
+    content: '';
+    width: 0;
+    height: 0;
+    margin-left: -110px;
+    margin-top: -80px;
+    border-left: solid 20px white;
+    border-top: solid 20px transparent;
+    border-bottom: solid 20px transparent;
+}
+#detalhes-programacao .thumb.active {
+    outline: solid 3px #fff;    
+}
+#detalhes-programacao .thumb.active:after{
+    position: absolute;
+    float: left;
+    content: '';
+    width: 0;
+    height: 0;
+    margin-left: -110px;
+    margin-top: -80px;
+    border-left: solid 20px white;
+    border-top: solid 20px transparent;
+    border-bottom: solid 20px transparent;
+}
